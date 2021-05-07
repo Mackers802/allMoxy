@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+html{
+    margin: 2%;
+}
+
+#grid{
+    background-color: cornflowerblue;
+}
+
+#container{
+    background-color: rgba(219, 219, 219, 0.616);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+    border: 5px solid black;
+}
+
+#table{
+    background-color: rgb(222, 219, 224);
+    margin: 25px;
+    border: 1px solid black;
+}
+
+
+#tr-header{
+    display: grid;
+    grid-template-columns: minmax(5%, max-content) repeat(auto-fill, 15%) 35%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    border-style: hidden;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+#th-body{
+    display: block;
+    justify-content: center;
+    min-width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-top: 0px;
+    border-style: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#tr{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: minmax(5%, max-content) repeat(auto-fill, 15%) 30%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+/* --------- th ------- */
+#th-id{
+    font-size: 10px;
+    min-width: 5vw;
+    padding: 0;
+    border: none;
+}
+
+#th-title{
+    font-size: 10px;
+    min-width: 10vw;
+    padding: 0;
+    border: none;
+}
+
+#th-description{
+    font-size: 10px;
+    min-width: 15vw;
+    padding: 0;
+    border: none;
+}
+
+#th-price{
+    font-size: 10px;
+    min-width: 10vw;
+    padding: 0;
+    border: none;
+}
+
+#th-quantity{
+    font-size: 10px;
+    min-width: 15vw;
+    padding: 0;
+    border: none;
+}
+
+#th-image{
+    font-size: 10px;
+    min-width: 8vw;
+    min-width: 150px;
+    padding: 0;
+    max-width: 250px;
+    border: none;
+}
+
+/* --------- td ------- */
+#td-id{
+    font-size: 8px;
+    min-width: 5vw;
+    padding: 0;
+    border-bottom: none;
+}
+
+#td-title{
+    font-size: 10px;
+    min-width: 10vw;
+    padding: 0;
+    border-bottom: none;
+}
+
+#td-description{
+    font-size: 10px;
+    min-width: 15vw;
+    width: 15vw;
+    padding: 0;
+    border-bottom: none;
+}
+
+#td-delete-button{
+    font-size: .5rem;
+    background-color: rgba(234, 55, 55, 0.836);
+    padding: 3%;
+    width: 34%;
+    margin: 3%;
+    margin-right: 0;
+    margin-left: 20%;
+    /* margin-right: 2%; */
+}
+
+#td-edit-button{
+    font-size: .5rem;
+    background-color: rgba(255, 233, 87, 0.836);
+    padding: 3%;
+    margin-left: 10px;
+    margin: 3%;
+    width: 20%;
+}
+
+#td-price{
+    font-size: 10px;
+    min-width: 10vw;
+    padding: 0;
+    border-bottom: none;
+}
+
+#td-quantity{
+    font-size: 10px;
+    min-width: 15vw;
+    padding: 0;
+    border-bottom: none;
+}
+
+#td-image{
+    font-size: 10px;
+    min-width: 150px;
+    max-width: 250px;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+#td-image-tag{
+    min-width: 100px;
+    max-width: 5vw;
+    height: auto;
+    padding: .5rem;
+}
+
+#form{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+#form-inputs-div{
+    margin: 2rem;
+}
+
+#form-action-div{
+    margin: 2rem;
+}
+
+.input{
+    font-size: .8rem;
+    justify-content: space-between;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    background-color: lightgray;
+}
+
+#sort-by{
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+    justify-content: right;
+}
+
+#form-action-div {
+    justify-content: right;
+    width: fit-content;
+    width: fit-content;
+    margin: .1rem;
+    padding: .2rem;
+}
+
+#add-btn{
+    font-size: .8rem;
+    width: 10%;
+    height: auto;
+    justify-content: space-between;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    background-color: lightgray;
+}

@@ -1,0 +1,12 @@
+#editForm{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(185, 176, 93);
+}
+
+.input{
+    background-color: whitesmoke;
+    text-align: center;
+    color: black;
+    border: .5px solid black;
+}
