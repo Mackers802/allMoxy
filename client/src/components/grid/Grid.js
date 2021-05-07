@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import "./grid.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from "react-bootstrapr";
+import Container from "react-bootstrap";
 import Table from "react-bootstrap";
 import { ItemProviderContext } from "../../context.js/itemProvider";
 import { Item } from "./Item";
