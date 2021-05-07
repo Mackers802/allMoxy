@@ -120,7 +120,7 @@ export const Grid = (props) => {
         </div>
       </form>
 
-      {/* <Container id="container"> */}
+      <div id="container">
         <Table id="table">
           <thead id="thead">
             <div id="form-action-div">
@@ -163,7 +163,7 @@ export const Grid = (props) => {
             ))}
           </thbody>
         </Table>
-      {/* </Container> */}
+      </div>
     </div>
   );
 };
