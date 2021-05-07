@@ -2,14 +2,16 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+const path = require("path")
+const port = process.env.PORT || 5000;
+require("dotenv").config();
 
-// require("dotenv").config();
-
+app.use(express.static(path.join(__dirname, "client", "build")))
 app.use(express.json());
 app.use(morgan("dev"));
 
 mongoose.connect(
-  "mongodb://localhost:27017/allMoxy",
+  process.env.MONGODB_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -26,6 +28,10 @@ app.use((err, req, res, next) => {
   return res.send({ errMsg: err.message });
 });
 
-app.listen(9000, () => {
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
+app.listen(port, () => {
   console.log("Running on port 9000");
 });
