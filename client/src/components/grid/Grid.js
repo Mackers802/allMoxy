@@ -1,8 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
 import "./grid.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from "react-bootstrap";
-import Table from "react-bootstrap";
+// import {Container} from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import { ItemProviderContext } from "../../context.js/itemProvider";
 import { Item } from "./Item";
 // import { Container } from 'react-bootstrap/Container'
@@ -120,7 +120,7 @@ export const Grid = (props) => {
         </div>
       </form>
 
-      <Container id="container">
+      {/* <Container id="container"> */}
         <Table id="table">
           <thead id="thead">
             <div id="form-action-div">
@@ -163,7 +163,7 @@ export const Grid = (props) => {
             ))}
           </thbody>
         </Table>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 };
