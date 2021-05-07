@@ -1,9 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
 import "./grid.css";
-import { Container, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
+import { Container } from "react-bootstrap/Container";
 import { ItemProviderContext } from "../../context.js/itemProvider";
 import { Item } from "./Item";
-// import { Container }from 'react-bootstrap/Container'
+// import { Container } from 'react-bootstrap/Container'
 
 export const Grid = (props) => {
   const { items, getAllItems, newItem, editItem, deleteItem } = useContext(
