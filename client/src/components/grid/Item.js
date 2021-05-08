@@ -71,35 +71,35 @@ export const Item = (props) => {
                 onChange={onChangeItem}
                 type="text"
                 name="title"
-                placeholder={item.title}
+                placeholder={`Title: ${item.title}`}
                 className="input"
               />
               <input
                 onChange={onChangeItem}
                 type="number"
                 name="price"
-                placeholder={item.price}
+                placeholder={`price: ${item.price}`}
                 className="input"
               />
               <input
                 onChange={onChangeItem}
                 type="number"
                 name="quantity"
-                placeholder={item.quantity}
+                placeholder={`quantity: ${item.quantity}`}
                 className="input"
               />
               <input
                 onChange={onChangeItem}
                 type="text"
                 name="description"
-                placeholder={item.description}
+                placeholder={`description: ${item.description}`}
                 className="input"
               />
               <input
                 onChange={onChangeItem}
                 type="text"
                 name="image"
-                placeholder={item.image}
+                placeholder={`image: ${item.image}`}
                 className="input"
               />
             </div>
