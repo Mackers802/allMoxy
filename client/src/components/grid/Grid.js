@@ -154,7 +154,7 @@ export const Grid = (props) => {
           <thbody id="th-body">
             {sortedData.map((item, index, _id) => (
               <Item
-                index={index}
+                index={index+1}
                 item={item}
                 id={_id}
                 edit={editItem}
